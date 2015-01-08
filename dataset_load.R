@@ -4,9 +4,8 @@ data <- read.table(filename,
                    sep = ";",
                    colClasses = c("character", "character", rep("numeric",7)),
                    na = "?")
-dim(data) # 2075259 9
+dim(data) 
 attach(data)
-## We only need data of 2 days.
 subset <- Date == "1/2/2007" | Date == "2/2/2007"
 newData <- data[subset, ]
 attach(newData)
