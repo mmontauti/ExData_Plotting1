@@ -9,3 +9,4 @@ plot(DateTime, Global_active_power,
      xlab = "",
      ylab = "Global Active Power (kilowatts)")
 
+dev.off()
